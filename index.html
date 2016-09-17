@@ -4,11 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>girldevelopit-reveal.js - The GDI HTML Presentation Framework</title>
+		<title>Girl Develop It LA JavaScript Preview</title>
 
-		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
-		<meta name="author" content="Girl Develop It">
-
+		<meta name="description" content="Girl Develop It LA preview slides for before GDILA's Intro to JavaScript class.">
+		<meta name="author" content="Liz Krane for Girl Develop It LA">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -32,11 +31,10 @@
 				document.getElementsByTagName( 'head' )[0].appendChild( link );
 			}
 		</script>
-
 		<!-- If use the PDF print sheet so students can print slides-->
-
 		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -45,327 +43,397 @@
 	<body>
 
 		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-        <!-- Opening -->
-				<section>
-					<img src="img/circle-gdi-logo.png" alt="GDI Logo" class="noborder"/>
-					<h1>GDI Reveal.js</h1>
-					<h2>Girl Develop It's Framework for HTML Presentations</h2>
-					<p>
-						<small>Found at <a href ="https://github.com/girldevelopit/gdi-slides-template">Girl Develop It reveal.js fork</a>.</small>
-					</p>
-					<p>
-						<small>Original Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-        <!-- Compatibility-->
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.</p>
 
-						<p>We highly recommend using Chrome, currently, however, the latest version of Safari, mobile Safari (iPad), Firefox and IE9 will work.
+				<section>
+					<img src="img/circle-gdi-logo.png" alt="GDI Logo" class="noborder" style="margin:0;" />
+					<h1 style="line-height:1.1em; margin-top:0;margin-bottom:60px;">Intro to JavaScript Preview</h1>
+
+					<p style="margin-top:10px;">
+						<small>Slides by <a href="http://learningnerd.com">Liz Krane</a> / <a href="https://twitter.com/LearningNerd">@LearningNerd</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
+
+					<img src="img/techjobsla-sponsors-2016-all.jpg" alt="TechJobsLA Sponsors" class="noborder" style="margin:0;max-height:800px;max-width:100%;" />
+
+				</section>
+
+				<section>
+					<h2 style="color:#53555C;font-size:1.6em;"><span style="font-size:0.8em;">Oct 29th &amp; 30th:</span><br><strong>JavaScript Weekend Workshop</strong></h2>
+					<p style="margin-top:80px; font-size:1.8em; font-weight: bold;">
+						<a href="https://meetup.com/Girl-Develop-It-Los-Angeles/events/234181153/">tinyurl.com/jsweekend</a>
+					</p>
+
+					<p class="fragment" style="margin-top:80px;">For complete beginners (only prereq: basic HTML)</p>
+					<p class="fragment" style="margin-top:40px;">8 hours of hands-on instruction with mini projects</p>
+					<p class="fragment" style="margin-top:40px;">Learn how to build dynamic web apps</p>
+					<p class="fragment" style="margin-top:40px;">Learn CS fundamentals that apply to <em>every</em> language</p>
 					</p>
 				</section>
 
-				<!-- Examples of basic html based slides -->
 				<section>
-					<h2>Marvelous Unordered List</h2>
+					<h2 style="margin-bottom:20px;">Welcome!</h2>
+						<p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+						<p class="green"><br>Some "rules"</p>
+						<ul>
+							<li>Every question is important.</li>
+							<li>Help each other.</li>
+							<li>Have fun.</li>
+							<li>Learn and return.</li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>Tell us about yourself!</h2>
+
+						<ul>
+							<li>What's your name?</li>
+							<li>What awesome things do you hope to make with JavaScript?</li>
+							<li>What's one question you have about JavaScript?</li>
+						</ul>
+				</section>
+
+				<section>
+					<h2 style="color:#53555C">Bookmark These Slides:</h2>
+					<p style="margin-top:90px; font-size:1.8em; font-weight: bold;">
+						<a href="http://gdila.github.io/gdi-js-preview/">gdila.github.io/gdi-js-preview</a>
+					</p>
+
+					<p style="margin-top:90px;">Follow along on your laptop or phone!</p>
+				</section>
+
+
+				<section>
+					<h2>What is JavaScript?</h2>
+
+					<p style="margin-top:75px;">A quirky but powerful and ubiquitous programming language -- it's built into every modern web browser!</p>
+					<p style="margin-top:50px;" class="fragment">Originally a client-side language for making websites more interactive, but now <em>so much more</em>!</p>
+				</section>
+
+				<section>
+					<h2 style="font-size:1.4em;">Popularity of Programming Languages as of June 2016</h2>
+					<iframe width="960" height="420" src="http://redmonk.com/hist-rankings-full.html"><a href=""></a></iframe>
+					<p style="margin-top:10px;"><a href="http://redmonk.com/sogrady/2016/07/20/language-rankings-6-16/">Stats by RedMonk</a>, based on data from GitHub and StackOverflow</p>
+				</section>
+
+				<section>
+					<iframe width="960" height="540" src="https://www.youtube.com/embed/aSmqq9RbiaU?rel=0" frameborder="0" allowfullscreen></iframe>
+
+					<p style="margin-top:60px; font-size:1.6em;"><a href="https://g.co/super">g.co/super</a></p>
+				</section>
+
+				<section>
+					<iframe width="960" height="540" src="https://www.youtube.com/embed/17P67Uz0kcw?rel=0" frameborder="0" allowfullscreen></iframe>
+
+					<p style="margin-top:40px; font-size:1.6em;"><a href="https://www.chrome.com/racer">chrome.com/racer</a></p>
+
+					<p style="margin-top:40px;"><a href="http://master.html5rocks-hrd.appspot.com/en/tutorials/casestudies/racer/">Read their article on how it was built</a></p>
+				</section>
+
+				<section>
+					<h2 style="color:#53555C;font-size:1.2em;line-height:1em;">A Few of My Favorite JavaScript Libraries</h2>
+
+					<p><a href="http://paperjs.org/">PaperJS.org</a></p>
+
+					<p><a href="https://nodejs.org/en/">NodeJS.org</a></p>
+
+					<p><a href="https://d3js.org/">d3JS.org</a></p>
+
+					<p><a href="http://jlord.us/sheetsee.js/">jlord.us/sheetsee.js</a></p>
+
+					<p><a href="http://johnny-five.io/">johnny-five.io</a></p>
+
+					<p><a href="http://leafletjs.com/">leafletJS.com</a></p>
+
+					<p><a href="http://letteringjs.com/">letteringJS.com</a></p>
+
+					<p><a href="http://underlinejs.org/">underlineJS.org</a></p>
+
+					<p><a href="http://phaser.io/">phaser.io</a></p>
+
+					<p><a href="http://www.createjs.com/soundjs">createJS.com/soundjs</a></p>
+
+					<p><a href="http://lab.hakim.se/reveal-js/">revealJS.com</a></p>
+
+					<p><a href="https://www.smore.com/clippy-js">smore.com/clippy-js</a></p>
+				</section>
+
+				<section>
+					<h2>Let's build something with JavaScript!</h2>
+				</section>
+
+				<section>
+					<h3 style="margin-bottom: 30px;">How to open your web browser's JavaScript console</h3>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li><strong>Chrome:</strong>
+							<ul><li style="margin-top:20px;">
+								<strong><em>Windows:</em></strong> Ctrl + Shift + <strong>J</strong>
+							</li>
+							<li>
+								<strong><em>Mac:</em></strong> Cmd + Opt + <strong>J</strong>
+							</li>
+							</ul>
+						</li>
+						<li><strong>Firefox:</strong>
+							<ul><li style="margin-top:20px;">
+								<strong><em>Windows:</em></strong> Ctrl + Shift + <strong>K</strong>
+							</li>
+							<li>
+								<strong><em>Mac:</em></strong> Cmd + Opt + <strong>K</strong>
+							</li>
+							</ul></li>
+						<li><strong>Safari / <em>Mac:</em></strong> Cmd + Opt + <strong>C</strong>
+							<ul><li style="margin-top:20px;">
+								<em>Note: first you may need to enable web inspector (<a href="https://developer.apple.com/library/mac/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/GettingStarted/GettingStarted.html">see instructions here</a>)</em>
+							</li></ul>
+						</li>
 					</ul>
 				</section>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-                <section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-                    <p>P.S. This won't work when running the slides locally unless you run reveal.js runs from a local web server.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Examples of code slides-->
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>For HTML -- Surround your code pre, then code class "xml".</p>
-<pre><code class="xml">&lt;ul class="demo"&gt;
-  &lt;li&gt;No order here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-				</section>
 
 				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>We can also make code editable</p>
-<pre><code contenteditable class="xml">&lt;ul class="demo"&gt;
-  &lt;li&gt;No order here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-				</section>
+					<div style="float:left;width: 75%">
+						<pre class="fragment fade-out overlay" data-fragment-index="0"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
+// Now let's use JavaScript to interact with the HTML!
 
+// First try clicking on the button to the right    > > >
+// It doesn't do anything yet, but we'll fix that!
 
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>CSS</p>
-<pre><code contenteditable class ="css">body{
-  background-color: #ffffff;
-}
-</code></pre>
-				</section>
+						</code></pre>
 
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>Javascript</p>
-<pre><code contenteditable class ="javascript">function helloWorld(){
-  var name = 'GDI';
-  alert("Hi, " + name)
-}
-</code></pre>
-				</section>
+						<pre class="fragment current-visible overlay" data-fragment-index="0"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
+// The HTML for the button is:
+// &lt;button id=&quot;testbutton&quot;&gt;Click me!&lt;/button&gt;
 
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>PHP</p>
-<pre><code contenteditable class ="php">function helloWorld(){
-  $name = 'GDI';
-  echo "Hi, " . $name;
-}
-</code></pre>
-				</section>
+// So we can create a variable for the button like this:
+var button = document.getElementById('testbutton');
 
-				<section>
-					  <h2>But wait! We teach code</h2>
-<p>Ruby</p><pre><code contenteditable class ="ruby">def hello_world
-  @name = 'GDI'
-  puts "Hi, #{@name}"
-end
-</code></pre>
-				</section>
+						</code></pre>
 
-         <section>
- 					  <h2>But wait! We teach code</h2>
- 					  <p>Python</p>
-<pre><code contenteditable class ="python">def hello_world():
-  name = "GDI"
-  print 'Hi, ' + name
-  return
-</code></pre>
- 				</section>
+						<pre class="fragment current-visible overlay"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
+// The HTML for the button is:
+// &lt;button id=&quot;testbutton&quot;&gt;Click me!&lt;/button&gt;
 
- 				 <section>
- 					  <h2>But wait! We teach code</h2>
- 					  <p>Java</p>
-<pre><code contenteditable class ="java">public void helloWorld(){
-  String name = "GDI";
-  System.out.println("Hi," + name)
-}
-</code></pre>
- 				</section>
+// So we can create a variable for the button like this:
+var button = document.getElementById('testbutton');
 
+// and change the text inside it like this:
+button.textContent = "testing one two three!";
+						</code></pre>
 
-        <!-- Elements entering one at a time-->
-        <section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+						<pre class="fragment current-visible overlay"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
+// The HTML for the button is:
+// &lt;button id=&quot;testbutton&quot;&gt;Click me!&lt;/button&gt;
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#/14/1">down</a>.
+// So we can create a variable for the button like this:
+var button = document.getElementById('testbutton');
+
+// and change the text inside it like this:
+button.textContent = "testing one two three!";
+
+// Let's do the same with the box below the button:
+var displayBox = document.getElementById("testdisplay");
+						</code></pre>
+
+						<pre class="fragment current-visible overlay"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
+// The HTML for the button is:
+// &lt;button id=&quot;testbutton&quot;&gt;Click me!&lt;/button&gt;
+
+// So we can create a variable for the button like this:
+var button = document.getElementById('testbutton');
+
+// and change the text inside it like this:
+button.textContent = "testing one two three!";
+
+// Let's do the same with the box below the button:
+var displayBox = document.getElementById("testdisplay");
+
+// and change the text inside the box too:
+displayBox.textContent = "JavaScript is magical!";
+						</code></pre>
+
+						<pre class="fragment current-visible overlay"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
+// Now let's define a new function that does this:
+function sayHello() {
+	displayBox.textContent = "Hello, world!";
+};
+
+// And let's call the function to check that it works:
+sayHello();
+						</code></pre>
+
+						<pre class="fragment current-visible overlay"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
+// Now let's define a new function that does this:
+function sayHello() {
+	displayBox.textContent = "Hello, world!";
+};
+
+// Finally, let's run this function when the button is clicked!
+button.addEventListener("click", sayHello);
+
+// It has 3 parts:
+//  1) the HTML element where the event happens (button)
+//  2) the type of event ("click")
+//    REFERENCE:
+//    https://developer.mozilla.org/en-US/docs/Web/Events
+//  3) the function to run (sayHello)
+						</code></pre>
+
+						<pre class="fragment current-visible overlay"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
+// The complete code:
+
+var button = document.getElementById("testbutton");
+var displayBox = document.getElementById("testdisplay");
+
+function sayHello() {
+	displayBox.textContent = "Hello, world!";
+};
+
+button.addEventListener("click", sayHello);
+
+// Tinker with it here:
+// http://codepen.io/LearnToCodeLA/pen/ZONyjP
+						</code></pre>
+
+					</div>
+
+					<div style="float:left;margin-top:70px;width: 25%;">
+						<button id="testbutton" class="testbutton" style="font-size: 40px; padding: 20px;">Click me!</button>
+	  					<p id="testdisplay" style="border: 2px solid black; font-size:30px; padding: 20px; margin-top: 40px;">
+							Display messages here
 						</p>
-						<a href="#/14/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+					</div>
+				</section>
+
+				<section data-state="movethebox">
+					<div style="float:left;width:75%">
+						<pre class=""><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
+var box = document.getElementById("movebox");
+
+window.addEventListener("keydown", moveBox);
+
+function moveBox(event) {
+  if (event.keyCode == '83') {
+	var currentTopPosition = parseInt(box.style.top, 10);
+	var newTopPosition = currentTopPosition + 10;
+	box.style.top = newTopPosition + "px";
+  }
+
+  if (event.keyCode == '87') {
+	var currentTopPosition = parseInt(box.style.top, 10);
+	var newTopPosition = currentTopPosition - 10;
+	box.style.top = newTopPosition + "px";
+  }
+
+  if (event.keyCode == '68') {
+	var currentLeftPosition = parseInt(box.style.left, 10);
+	var newLeftPosition = currentLeftPosition + 10;
+	box.style.left = newLeftPosition + "px";
+  }
+
+  if (event.keyCode == '65') {
+	var currentLeftPosition = parseInt(box.style.left, 10);
+	var newLeftPosition = currentLeftPosition - 10;
+	box.style.left = newLeftPosition + "px";
+  }
+
+}
+						</code></pre>
+
+					</div>
+
+					<div style="float:left;margin-top:100px;width:25%;">
+						<p id="movebox" style="width:200px;height:200px;background:lightblue;position:absolute;top:110px;left:820px;transition:0.1s;"></p>
+					</div>
+
 					</section>
+
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-						<a href="#/14/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-						<a href="#/14" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<iframe height='542' scrolling='no' src='http://codepen.io/jeffibacache/embed/bzBsp/?height=542&theme-id=dark&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/jeffibacache/pen/bzBsp/'>Playable Canvas Asteroids</a> by Jeff Ibacache (<a href='http://codepen.io/jeffibacache'>@jeffibacache</a>) on <a href='http://codepen.io'>CodePen</a>.
+						</iframe>
 					</section>
+
 					<section>
-						<h2>Basement Level 2</h2>
-						<a href="#/14/3" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-						<a href="#/14/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<h2>Group Googling Challenge:</h2>
+						<h3>Make a Box Turn Random Colors!</h3>
 					</section>
+
 					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/14" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+						<div style="float:left;width:75%">
+							<pre class="fragment fade-out overlay" data-fragment-index="0"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
+var colorBox = document.getElementById("colorbox");
 
+colorBox.addEventListener("click", randomColor);
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview. Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+function randomColor() {
 
-				<section>
-					<h2>rvl.io</h2>
-					<p>
-						You know, we are nerds after all and will probably get a kick out of all of this HTML. BUT, if you really don't like writing slides in HTML you can use the online editor <a href="http://www.rvl.io" target="_blank">rvl.io</a>.
-					</p>
-				</section>
+  // Your code here! Go Googling!
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
+  // HINT 1: Find out how to generate a random hex color
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-            <a href="?theme=gdicool#/themes">GDI Cool</a> -
-            <a href="?theme=gdilight#/themes">GDI Light</a> -
-            <a href="?theme=gdisunny#/themes">GDI Sunny</a> -
-            <a href="?theme=gdidefault#/themes">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
+  // HINT 2: Find out how to use JavaScript to change
+  //         the background color of an element
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+  // HINT 3: Don't forget hex colors need a # in front!
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
+}
+							</code></pre>
 
+							<pre class="fragment current-visible overlay" data-fragment-index="0"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
+// Did you learn anything interesting? :)
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/1">like this</a>.
-					</p>
-				</section>
+// HERE'S THE SOLUTION:
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+var colorBox = document.getElementById("colorbox");
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Girl Develop It</h3>
-					<h4>Special thanks to: Hakim El Hattab / hakim.se</h4>
-				</section>
+colorBox.addEventListener("click", randomColor);
+
+function randomColor() {
+
+ colorBox.style.background = '#' +
+          Math.floor(Math.random()*16777215).toString(16);
+
+}
+// SOURCE:
+// https://css-tricks.com/snippets/javascript/random-hex-color/
+							</code></pre>
+
+						</div>
+
+						<div style="float:left;margin-top:100px;width:25%;">
+							<p id="colorbox" style="width:200px;height:200px;background:lightblue;position:absolute;top:110px;left:820px;transition:0.1s;"></p>
+						</div>
+
+						</section>
+
+						<section>
+							<h2 style="margin-top:-50px;color:#53555C;line-height:1.5em;">Thank you,<br>and happy coding!</h2>
+							<p style="margin-top:80px; font-size:1.8em; font-weight: bold;">
+								<a href="https://meetup.com/Girl-Develop-It-Los-Angeles/events/234181153/">tinyurl.com/jsweekend</a>
+							</p>
+
+							<p style="margin-top:100px;font-size:1.3em;">
+								Hope to see you Oct 29th and 30th!
+							</p>
+						</section>
 
 			</div>
   		<footer>
         <div class="copyright">
-          Official class name here -- Chapter name here (if content modified from original) --
+          JavaScript Preview -- Girl Develop It Los Angeles --
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div>
       </footer>
 		</div>
 
-
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
 
-		<script>
 
+
+		<script>
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({
@@ -383,10 +451,45 @@ end
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true },
                     { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
+
+			Reveal.addEventListener( 'movethebox', function() {
+				var box = document.getElementById("movebox");
+
+				window.addEventListener("keydown", moveBox);
+
+				function moveBox(event) {
+				  if (event.keyCode == '83') {
+					var currentTopPosition = parseInt(box.style.top, 10);
+					var newTopPosition = currentTopPosition + 10;
+					box.style.top = newTopPosition + "px";
+				  }
+
+				  if (event.keyCode == '87') {
+					// save the current position as a number
+					var currentTopPosition = parseInt(box.style.top, 10);
+					var newTopPosition = currentTopPosition - 10;
+					box.style.top = newTopPosition + "px";
+				  }
+
+				  if (event.keyCode == '68') {
+					// save the current position as a number
+					var currentLeftPosition = parseInt(box.style.left, 10);
+					var newLeftPosition = currentLeftPosition + 10;
+					box.style.left = newLeftPosition + "px";
+				  }
+
+				  if (event.keyCode == '65') {
+					// save the current position as a number
+					var currentLeftPosition = parseInt(box.style.left, 10);
+					var newLeftPosition = currentLeftPosition - 10;
+					box.style.left = newLeftPosition + "px";
+				  }
+
+				}
+			}, false );
 
 		</script>
 

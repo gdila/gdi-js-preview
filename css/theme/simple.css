@@ -66,6 +66,30 @@ div.left-align{
 .clear{
 	clear: both;}
 
+.reveal ul li, .reveal ol li {
+	margin-bottom:20px;
+}
+
+/* Using "current-visible overlay" or "fade-out overlay"
+ 	to completely hide gaps left over from hidden fragments
+
+	Example for first fragment to be visible on a slide:
+	<FIRST class="fragment fade-out overlay" data-fragment-index="0">
+	<SECOND class="fragment current-visible overlay" data-fragment-index="0">
+	*/
+.reveal .fragment.overlay.visible:not(.current-fragment) {
+    display: none;
+    height:0px;
+    line-height: 0px;
+    font-size: 0px;
+}
+.reveal .fragment.overlay.fade-out.visible {
+	display: none;
+    height:0px;
+    line-height: 0px;
+    font-size: 0px;
+}
+
 /*********************************************
  * HEADERS
  *********************************************/
@@ -75,11 +99,11 @@ div.left-align{
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
   color: #f05b62;
   font-family: "Gotham-Round", Impact, sans-serif;
   font-weight: 300;
-  line-height: 0.9em;
+  line-height: 1.4em;
   letter-spacing: 0.02em;
   text-transform: none;
   text-shadow: none; }
