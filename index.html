@@ -135,29 +135,29 @@
 				<section>
 					<h2 style="color:#53555C;font-size:1.2em;line-height:1em;">A Few of My Favorite JavaScript Libraries</h2>
 
-					<p><a href="https://paperjs.org/">PaperJS.org</a></p>
+					<p><a href="//paperjs.org/">PaperJS.org</a></p>
 
-					<p><a href="https://nodejs.org/en/">NodeJS.org</a></p>
+					<p><a href="//nodejs.org/en/">NodeJS.org</a></p>
 
-					<p><a href="https://d3js.org/">d3JS.org</a></p>
+					<p><a href="//d3js.org/">d3JS.org</a></p>
 
-					<p><a href="https://jlord.us/sheetsee.js/">jlord.us/sheetsee.js</a></p>
+					<p><a href="//jlord.us/sheetsee.js/">jlord.us/sheetsee.js</a></p>
 
-					<p><a href="https://johnny-five.io/">johnny-five.io</a></p>
+					<p><a href="//johnny-five.io/">johnny-five.io</a></p>
 
-					<p><a href="https://leafletjs.com/">leafletJS.com</a></p>
+					<p><a href="//leafletjs.com/">leafletJS.com</a></p>
 
-					<p><a href="https://letteringjs.com/">letteringJS.com</a></p>
+					<p><a href="//letteringjs.com/">letteringJS.com</a></p>
 
-					<p><a href="https://underlinejs.org/">underlineJS.org</a></p>
+					<p><a href="//underlinejs.org/">underlineJS.org</a></p>
 
-					<p><a href="https://phaser.io/">phaser.io</a></p>
+					<p><a href="//phaser.io/">phaser.io</a></p>
 
-					<p><a href="https://www.createjs.com/soundjs">createJS.com/soundjs</a></p>
+					<p><a href="//www.createjs.com/soundjs">createJS.com/soundjs</a></p>
 
-					<p><a href="https://lab.hakim.se/reveal-js/">revealJS.com</a></p>
+					<p><a href="//lab.hakim.se/reveal-js/">revealJS.com</a></p>
 
-					<p><a href="https://www.smore.com/clippy-js">smore.com/clippy-js</a></p>
+					<p><a href="//www.smore.com/clippy-js">smore.com/clippy-js</a></p>
 				</section>
 
 				<section>
@@ -220,7 +220,7 @@ var button = document.getElementById('testbutton');
 var button = document.getElementById('testbutton');
 
 // and change the text inside it like this:
-button.textContent = "testing one two three!";
+button.textContent = 'testing one two three!';
 						</code></pre>
 
 						<pre class="fragment current-visible overlay"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
@@ -231,10 +231,10 @@ button.textContent = "testing one two three!";
 var button = document.getElementById('testbutton');
 
 // and change the text inside it like this:
-button.textContent = "testing one two three!";
+button.textContent = 'testing one two three!';
 
 // Let's do the same with the box below the button:
-var displayBox = document.getElementById("testdisplay");
+var displayBox = document.getElementById('testdisplay');
 						</code></pre>
 
 						<pre class="fragment current-visible overlay"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
@@ -245,19 +245,19 @@ var displayBox = document.getElementById("testdisplay");
 var button = document.getElementById('testbutton');
 
 // and change the text inside it like this:
-button.textContent = "testing one two three!";
+button.textContent = 'testing one two three!';
 
 // Let's do the same with the box below the button:
-var displayBox = document.getElementById("testdisplay");
+var displayBox = document.getElementById('testdisplay');
 
 // and change the text inside the box too:
-displayBox.textContent = "JavaScript is magical!";
+displayBox.textContent = 'JavaScript is magical!';
 						</code></pre>
 
 						<pre class="fragment current-visible overlay"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
 // Now let's define a new function that does this:
 function sayHello() {
-	displayBox.textContent = "Hello, world!";
+	displayBox.textContent = 'Hello, world!';
 };
 
 // And let's call the function to check that it works:
@@ -267,15 +267,15 @@ sayHello();
 						<pre class="fragment current-visible overlay"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
 // Now let's define a new function that does this:
 function sayHello() {
-	displayBox.textContent = "Hello, world!";
+	displayBox.textContent = 'Hello, world!';
 };
 
 // Finally, let's run this function when the button is clicked!
-button.addEventListener("click", sayHello);
+button.addEventListener('click', sayHello);
 
 // It has 3 parts:
 //  1) the HTML element where the event happens (button)
-//  2) the type of event ("click")
+//  2) the type of event ('click')
 //    REFERENCE:
 //    https://developer.mozilla.org/en-US/docs/Web/Events
 //  3) the function to run (sayHello)
@@ -284,14 +284,14 @@ button.addEventListener("click", sayHello);
 						<pre class="fragment current-visible overlay"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
 // The complete code:
 
-var button = document.getElementById("testbutton");
-var displayBox = document.getElementById("testdisplay");
+var button = document.getElementById('testbutton');
+var displayBox = document.getElementById('testdisplay');
 
 function sayHello() {
-	displayBox.textContent = "Hello, world!";
+	displayBox.textContent = 'Hello, world!';
 };
 
-button.addEventListener("click", sayHello);
+button.addEventListener('click', sayHello);
 
 // Tinker with it here:
 // https://codepen.io/LearnToCodeLA/pen/ZONyjP
@@ -312,33 +312,33 @@ button.addEventListener("click", sayHello);
 						<pre class=""><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
 // Press W, A, S, and D on your keyboard to move the box!
 
-var box = document.getElementById("movebox");
+var box = document.getElementById('movebox');
 
-window.addEventListener("keydown", moveBox);
+window.addEventListener('keydown', moveBox);
 
 function moveBox(event) {
   if (event.keyCode == '83') {
 	var currentTopPosition = parseInt(box.style.top, 10);
 	var newTopPosition = currentTopPosition + 10;
-	box.style.top = newTopPosition + "px";
+	box.style.top = newTopPosition + 'px';
   }
 
   if (event.keyCode == '87') {
 	var currentTopPosition = parseInt(box.style.top, 10);
 	var newTopPosition = currentTopPosition - 10;
-	box.style.top = newTopPosition + "px";
+	box.style.top = newTopPosition + 'px';
   }
 
   if (event.keyCode == '68') {
 	var currentLeftPosition = parseInt(box.style.left, 10);
 	var newLeftPosition = currentLeftPosition + 10;
-	box.style.left = newLeftPosition + "px";
+	box.style.left = newLeftPosition + 'px';
   }
 
   if (event.keyCode == '65') {
 	var currentLeftPosition = parseInt(box.style.left, 10);
 	var newLeftPosition = currentLeftPosition - 10;
-	box.style.left = newLeftPosition + "px";
+	box.style.left = newLeftPosition + 'px';
   }
 
 }
@@ -364,10 +364,10 @@ function moveBox(event) {
 
 					<section>
 						<div style="float:left;width:75%">
-							<pre class="fragment fade-out overlay" data-fragment-index="0"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
-var colorBox = document.getElementById("colorbox");
+							<pre><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
+var colorBox = document.getElementById('colorbox');
 
-colorBox.addEventListener("click", randomColor);
+colorBox.addEventListener('click', randomColor);
 
 function randomColor() {
 
@@ -383,18 +383,28 @@ function randomColor() {
 }
 							</code></pre>
 
-							<pre class="fragment current-visible overlay" data-fragment-index="0"><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
+						</div>
+
+						<div style="float:left;margin-top:100px;width:25%;">
+							<p id="colorbox" style="width:200px;height:200px;background:lightblue;position:absolute;top:110px;left:820px;transition:0.1s;"></p>
+						</div>
+
+					</section>
+
+					<section data-state="colorthebox">
+						<div style="float:left;width:75%;">
+							<pre><code class="javascript smaller" data-trim contenteditable="" style="height:450px;">
 // Did you learn anything interesting? :)
 
 // HERE'S THE SOLUTION:
 
-var colorBox = document.getElementById("colorbox");
+var colorBoxSolved = document.getElementById('colorboxsolved');
 
-colorBox.addEventListener("click", randomColor);
+colorBoxSolved.addEventListener('click', randomColor);
 
 function randomColor() {
 
- colorBox.style.background = '#' +
+ colorBoxSolved.style.background = '#' +
           Math.floor(Math.random()*16777215).toString(16);
 
 }
@@ -405,21 +415,21 @@ function randomColor() {
 						</div>
 
 						<div style="float:left;margin-top:100px;width:25%;">
-							<p id="colorbox" style="width:200px;height:200px;background:lightblue;position:absolute;top:110px;left:820px;transition:0.1s;"></p>
+							<p id="colorboxsolved" style="width:200px;height:200px;background:lightblue;position:absolute;top:110px;left:820px;transition:0.1s;"></p>
 						</div>
 
-						</section>
+					</section>
 
-						<section>
-							<h2 style="margin-top:-50px;color:#53555C;line-height:1.5em;">Thank you,<br>and happy coding!</h2>
-							<p style="margin-top:80px; font-size:1.8em; font-weight: bold;">
-								<a href="https://meetup.com/Girl-Develop-It-Los-Angeles/events/234181153/">tinyurl.com/jsweekend</a>
-							</p>
+					<section>
+						<h2 style="margin-top:-50px;color:#53555C;line-height:1.5em;">Thank you,<br>and happy coding!</h2>
+						<p style="margin-top:80px; font-size:1.8em; font-weight: bold;">
+							<a href="https://meetup.com/Girl-Develop-It-Los-Angeles/events/234181153/">tinyurl.com/jsweekend</a>
+						</p>
 
-							<p style="margin-top:100px;font-size:1.3em;">
-								Hope to see you Oct 29th and 30th!
-							</p>
-						</section>
+						<p style="margin-top:100px;font-size:1.3em;">
+							Hope to see you Oct 29th and 30th!
+						</p>
+					</section>
 
 			</div>
   		<footer>
@@ -491,6 +501,16 @@ function randomColor() {
 				  }
 
 				}
+			}, false );
+
+			Reveal.addEventListener( 'colorthebox', function() {
+				var colorBoxSolved = document.getElementById('colorboxsolved');
+				colorBoxSolved.addEventListener('click', randomColor);
+				function randomColor() {
+				 	colorBoxSolved.style.background = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+				}
+
 			}, false );
 
 		</script>
